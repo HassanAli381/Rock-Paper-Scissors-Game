@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rock Paper Scissors Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="icon" href="images/scissors.png">
+
+
+</head>
+<body id = "body">
+<div class = "score">
+
+    <h3>Score</h3>
+    <p>You: 
+        <span id = "my-score">0</span>
+    </p> 
+    <p>Computer: 
+        <span id = "comp-score">0</span>
+    </p>
+    <!--Result-->
+    <div class="res">
+    
+    </div>
+</div>
+
+<div class = "main">
+    <div class = "you">
+        <h3>Your Choise</h3>
+        <div class = "img_choise">
+            <div class = "rock">
+                <button onclick = "imageRock()">
+                    <img src="images/rock.png" alt="Rock" title = "Rock">
+                </button>
+            </div>
+            <div class = "paper">
+                <button onclick = "imagePaper()">
+                    <img src="images/paper.png" alt="paper" title = "Paper">                
+                </button>
+            </div>
+            <div class = "scissors">
+                <button onclick = "imageScissors()">
+                    <img src="images/scissors.png" alt="scissors" title = "scissors">                
+                </button>
+            </div>
+        </div>
+        <!--Choise Appearence-->
+        <div id = "my-ch">
+            <p id = "my-ch-txt"></p>
+        </div>
+        
+    </div>
+    
+    <!--Computer Choise -->
+    <div class = "comp">
+        <h3>Computer Choise</h3>
+        <p id = "c-ch-txt"></p>
+        <div id = "img_choise"> </div>
+    </div>
+</div>
+
+<p id="dev">Developed by Hassan Ali</p>
+</body>
+<script src='main.js'></script>
+</html>
