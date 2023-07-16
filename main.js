@@ -149,15 +149,15 @@ function s() {
 }
 let roundnum = 1;
 function roundScore() {
-    if(myScore == 5 && myScore == compScore) {
+    if(myScore == 5 && compScore == 5) {
         window.alert("Round " + roundnum++ + "is Draw!");
         myScore = 0, compScore = 0;
     }
-    else if(myScore == 5) {
+    else if(myScore == 5 && compScore < 5) {
         window.alert("You Won on Round " + roundnum++);
         myScore = 0, compScore = 0;
     }
-    else if(compScore == 5) {
+    else if(compScore == 5 && myScore < 5) {
         window.alert("Computer Won on Round " + roundnum++);
         myScore = 0, compScore = 0;
     }
