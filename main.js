@@ -153,7 +153,7 @@ function roundScore() {
         window.alert("Round " + roundnum++ + "is Draw!");
         myScore = 0, compScore = 0;
     }
-    if(myScore == 5) {
+    else if(myScore == 5) {
         window.alert("You Won on Round " + roundnum++);
         myScore = 0, compScore = 0;
     }
