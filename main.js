@@ -149,7 +149,7 @@ function s() {
 }
 let roundnum = 1;
 function roundScore() {
-    if(myScore == compScore) {
+    if(myScore == 5 && myScore == compScore) {
         window.alert("Round " + roundnum++ + "is Draw!");
         myScore = 0, compScore = 0;
     }
